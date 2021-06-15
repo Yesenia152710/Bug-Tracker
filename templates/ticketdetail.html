@@ -1,0 +1,26 @@
+<p>
+<h1>Title:{{ ticket.title }}</h1>
+</p>
+<p>
+<h6>{{ ticket.time_date }}</h6>
+</p>
+<p>
+<h3>Description:</h3>{{ ticket.description }}
+</p>
+<p>
+<h4>Who Filed:</h4>{{ ticket.filed }}
+</p>
+<p>
+<h4>Status:</h4>{{ ticket.status }}
+</p>
+<p>
+<h4>Assigned To:</h4>{{ ticket.assigned }}
+</p>
+<button><a href="/assign/{{ ticket.id }}/">Assign</a></button>
+<p>
+<h4>Completed by:</h4>{{ ticket.completed }}
+</p>
+<p><button><a href="/complete/{{ ticket.id}}/">Complete</a></button>
+<p><button><a href="/invalid/{{ ticket.id}}/">Invalid</a></button>
+
+<p><button><a href="/ticket/{{ ticket.id}}/edit/">Edit</a></button>

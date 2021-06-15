@@ -1,0 +1,28 @@
+{{ user }}
+
+<p>
+<h1>Filed</h1>
+
+{% for t in filed %}
+
+<p><a href="/ticket/{{ t.id }}/">{{ t.title }}</a>
+
+  {% endfor %}
+
+<p>
+<h1>Assigned</h1>
+
+{% for t in assign%}
+
+<p><a href="/ticket/{{ t.id }}/">{{ t.title }}</a>
+
+  {% endfor %}
+
+<p>
+<h1>Completed</h1>
+
+{% for t in complete %}
+
+<p><a href="/ticket/{{ t.id }}/">{{ t.title }}</a>
+
+  {% endfor %}

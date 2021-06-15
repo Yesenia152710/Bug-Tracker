@@ -1,0 +1,37 @@
+<h1>Hallo</h1>
+<p><a href="/createticket/">Create A ticket</a>
+<p><a href="/logout/">Logout</a>
+<p>
+<h1>New</h1>
+{% for t in new%}
+
+<p><a href="ticket/{{ t.id }}/">{{ t.title }}</a>
+
+  {% endfor %}
+
+<p>
+<h1>In Progress</h1>
+
+{% for t in pro%}
+
+<p><a href="ticket/{{ t.id }}/">{{ t.title }}</a>
+
+  {% endfor %}
+
+<p>
+<h1>Done</h1>
+
+{% for t in done%}
+
+<p><a href="ticket/{{ t.id }}/">{{ t.title }}</a>
+
+  {% endfor %}
+
+<p>
+<h1>Invalid</h1>
+
+{% for t in inv%}
+
+<p><a href="ticket/{{ t.id }}/">{{ t.title }}</a>
+
+  {% endfor %}
